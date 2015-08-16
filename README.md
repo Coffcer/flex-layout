@@ -34,4 +34,4 @@ flex-row: 容器里的[栅格]以竖向排列，就像header、content、footer�
 
 MIT
 
-[1]: ww.daipig.com
+[1]: http://coffcer.github.io/flex-layout/
