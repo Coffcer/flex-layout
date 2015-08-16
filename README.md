@@ -3,6 +3,9 @@
 基于flexbox的栅格化布局库，提供更直观、丰富的布局方式。<br>
 [文档与DEMO][1]
 
+#npm
+	npm install flex-layout
+
 #优势
 
 flex-layout解决了css布局的不少问题:
@@ -25,9 +28,9 @@ flex-row: 容器里的[栅格]以竖向排列，就像header、content、footer�
 
 * 通常，只有[栅格]可以直接放在[容器]中，而你的内容应该放在[栅格]里。但这不是必须的，直接把内容放在[容器]里也没问题。
 * 如果一个[容器]里包含的[栅格]超过24格，多出的部分将另起一行。
-* IE的话只兼容IE10+，其他主流浏览器都支持，具体可以看：兼容性
+* IE的话只兼容IE10+，其他主流浏览器都支持。
 * Flexbox有主轴，副轴的概念，flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。
-* 不过，如果你对Flexbox有所了解的话，用起来会更顺手，推荐阮一峰的Flex 布局教程
+* 不过，如果你对Flexbox有所了解的话，用起来会更顺手。
 * 与Bootstrap等栅格化不同的是：flex-layout不需要container，栅格本身不自带padding。
 
 #License
