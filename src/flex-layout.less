@@ -1,5 +1,4 @@
 @flex-column: 24;
-@flex-padding: 0;
 
 .flex-clearfix() {
 	&:before, &:after {
@@ -15,7 +14,6 @@
 	}
 }
 
-// 容器
 .flex-column, .flex-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -40,7 +38,6 @@
 	align-items: stretch;
 }
 
-// 栅格，默认自动平均分配
 .flex-item {
 	float: left;
 	flex-grow: 1;
@@ -49,7 +46,8 @@
 // 递归生成栅格
 .build-item(@i) when (@i > 0) {
 	.build-item((@i - 1));
-
+	
+	// 栅格
 	.flex-item-@{i} {
 		float: left;
 		width: percentage(@i / @flex-column);
@@ -68,6 +66,7 @@
 
 .build-item(@flex-column);
 
+// flex-row的对齐方式
 .build-align(@type) when (@type = row) {
 	&.flex-left {
 		align-items: flex-start;
@@ -88,6 +87,7 @@
 		justify-content: center;
 	}
 }
+// flex-column的对齐方式
 .build-align(@type) when (@type = column) {
 	&.flex-left {
 		justify-content: flex-start;
