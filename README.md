@@ -17,7 +17,7 @@ flex-layout解决了css布局的不少问题:
 
 #概述
 
-与传统的栅格化一样，flex-layout基于[容器] (相当于Bootstrap的row) 和[栅格] (相当于Bootstrap的column) 来布局:
+与传统的栅格化一样，flex-layout基于容器(相当于Bootstrap的row) 和栅格(相当于Bootstrap的column) 来布局:
 
 * [容器]有两种：
 flex-column: 容器里的[栅格]以横向排列，与传统栅格化的row一样
