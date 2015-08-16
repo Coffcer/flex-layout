@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica,  "Microsoft YaHei", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #34495e;
+}
+a {
+	color: #34495e;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ol {
+	margin: 0;
+	padding-left: 20px;
+}
+ol li {
+	margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #5C6B77;
+}
+br {
+	line-height: 2;
+}
+
+.m-container {
+	min-height: 100vh;
+}
+
+.m-header {
+	position: relative;
+	padding: 0 50px;
+	height: 80px;
+	border-bottom: solid 1px #e1e1e1;
+	box-shadow: 0 1px 2px #eee;
+}
+.m-header .logo {
+	width: 230px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #555;
+}
+.m-header .menu {
+	margin-left: auto;
+}
+.m-header .menu a {
+	display: inline-block;
+	margin: 0 15px;
+	line-height: 4;
+	font-weight: 600;
+	color: #71B5DE;
+}
+
+.m-content {
+	background-color: #fdfdfd; 
+}
+.m-sidebar {
+	width: 270px;
+	background-color: #f8f8f8;
+}
+.m-nav {
+	padding-top: 20px;
+}
+.m-nav a {
+	display: block;
+	padding-left: 60px;
+	line-height: 4;
+	color: #666;
+}
+.m-nav li {
+	transition: background-color .1s;
+}
+.m-nav li:hover {
+	background-color: #fdfdfd;
+	box-shadow: inset 6px 0 #71B5DE;
+}
+
+.m-main {
+	flex: 1;
+	padding: 20px 40px 60px 40px;
+	max-width: 1300px;
+}

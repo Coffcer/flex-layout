@@ -1,0 +1,24 @@
+{
+  "name": "flex-layout",
+  "version": "1.0.0",
+  "description": "CSS3 Flexbox Layout",
+  "main": "./dist/flex-layout.css",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-less": "^3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-less": "^3.0.3"
+  },
+  "keywords": [
+    "flexbox",
+    "grid",
+    "css3",
+    "layout"
+  ],
+  "author": "Coffce",
+  "license": "MIT"
+}
