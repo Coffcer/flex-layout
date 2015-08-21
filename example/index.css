@@ -34,17 +34,13 @@
 	background-color: #f4f4f4;
 }
 .box .head .title {
-	margin-right: 40px
+	margin-right: 40px;
+	color: #007BC5;
 }
 .box .head .tip {
-	float: right;
-	line-height: 23px;
-	font-weight: normal;
-}
-@media (max-width: 1000px) {
-	.box .head .tip {
-		display: none;
-	}
+	margin: 5px 0 0;
+	line-height: 2;
+	font-size: 12px;
 }
 .box .demo {
 	margin: 20px 0;

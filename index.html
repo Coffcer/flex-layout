@@ -85,9 +85,9 @@
 					<h2>用法</h2>
 					<div class="box">
 						<div class="head">
-							<span class="title">垂直居中 .flex-middle</span>
-							<span class="title">水平居中 .flex-center</span>
-							<small class="tip">这两个class应用在[容器]上</small>
+							<span class="title">flex-middle 垂直居中</span>
+							<span class="title">flex-center 水平居中</span>
+							<p class="tip">这两个class应用在[容器]上时，所有子flex-item都会垂直或水平居中。也可以单独应用在[栅格]上，使特定栅格居中对齐。</p>
 						</div>
 						<div class="demo flex-row flex-middle flex-center" style="min-height: 180px">
 							<div class="flex-item-8" style="margin-bottom: 10px">无论是多行还是单行，都可以垂直居中</div>
@@ -96,8 +96,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">向左偏移 .flex-offset-*</span>
-							<small class="tip">这个class应用在[栅格]上</small>
+							<span class="title">flex-offset-* 向左偏移</span>
+							<p class="tip">这个class应用在[栅格]上，指定[栅格]向左偏移多少格。</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item-8">flex-item-8</div>
@@ -111,9 +111,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">排序 .flex-order-*</span>
-							<span class="title">order越小排在越前面</span>
-							<small class="tip">这个class应用在[栅格]上</small>
+							<span class="title">flex-order-* 排序 </span>
+							<p class="tip">这个class应用在[栅格]上，order越小排在越前面。</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item-6 flex-order-4">flex-order-4</div>
@@ -124,9 +123,9 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">左对齐 .flex-left</span>
-							<span class="title">右对齐 .flex-right</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-left 左对齐</span>
+							<span class="title">flex-right 右对齐</span>
+							<p class="tip">这两个class应用在[容器]上时，所有子flex-item都会左右对其。也可以单独应用在[栅格]上。</p>
 						</div>
 						<div class="demo flex-column flex-left">
 							<div class="flex-item-6">左对齐</div>
@@ -140,46 +139,46 @@
 						</div>
 						<div class="demo flex-row flex-left">
 							<div class="flex-item-6">左对齐</div>
-							<div class="flex-item-6">左对齐</div>
+							<div class="flex-item-6 flex-right">右对齐</div>
 							<div class="flex-item-6">左对齐</div>
 						</div>
 						<div class="demo flex-row flex-right">
 							<div class="flex-item-6">右对齐</div>
-							<div class="flex-item-6">右对齐</div>
+							<div class="flex-item-6 flex-left">左对齐</div>
 							<div class="flex-item-6">右对齐</div>
 						</div>
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">顶部对齐 .flex-top</span>
-							<span class="title">底部对齐 .flex-bottom</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-top 顶部对齐</span>
+							<span class="title">flex-bottom 底部对齐</span>
+							<p class="tip">这两个class应用在[容器]上时，所有子flex-item都会上下对其。也可以单独应用在[栅格]上。</p>
 						</div>
 						<div class="demo flex-column flex-top" style="height: 80px">
 							<div class="flex-item-6">顶部对齐</div>
-							<div class="flex-item-6">顶部对齐</div>
+							<div class="flex-item-6">底部对齐</div>
 							<div class="flex-item-6">顶部对齐</div>
 						</div>
 						<div class="demo flex-column flex-bottom" style="height: 80px">
 							<div class="flex-item-6">底部对齐</div>
-							<div class="flex-item-6">底部对齐</div>
+							<div class="flex-item-6">顶部对齐</div>
 							<div class="flex-item-6">底部对齐</div>
 						</div>
 						<div class="demo flex-row flex-top" style="height: 140px">
 							<div class="flex-item-6">顶部对齐</div>
 							<div class="flex-item-6">顶部对齐</div>
-							<div class="flex-item-6">顶部对齐</div>
+							<div class="flex-item-6 flex-bottom">底部对齐</div>
 						</div>
-						<div class="demo flex-row flex-bottom" style="height: 140px">
-							<div class="flex-item-6">底部对齐</div>
+						<div class="demo flex-row flex-bottom flex-right" style="height: 140px">
+							<div class="flex-item-6 flex-top">顶部对齐</div>
 							<div class="flex-item-6">底部对齐</div>
 							<div class="flex-item-6">底部对齐</div>
 						</div>
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">等宽对齐，自动调整栅格间距，保持两边间距相同 .flex-between</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-between 等宽对齐</span>
+							<p class="tip">这个class应用在[容器]上，自动调整栅格间距，保持两边间距相同。</p>
 						</div>
 						<div class="demo flex-column flex-between">
 							<div class="flex-item-4">等宽对齐</div>
@@ -196,8 +195,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">分散排列，与等宽对齐相同，但最左、最右、最上、最下的间距比[栅格]之间的间距大一倍 .flex-around</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-around 分散排列</span>
+							<p class="tip">这个class应用在[容器]上，与等宽对齐相同，但最左、最右、最上、最下的间距比[栅格]之间的间距大一倍。</p>
 						</div>
 						<div class="demo flex-column flex-around">
 							<div class="flex-item-4">分散排列</div>
@@ -214,7 +213,7 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">嵌套</span>
+							<span class="title">嵌套布局</span>
 						</div>
 						<div class="demo flex-column flex-center">
 							<div class="flex-item-12 flex-row">
@@ -239,8 +238,8 @@
 					</ol>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-md 当分辨率低于992px的时候，使[容器]变为竖向排列</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-md</span>
+							<p class="tip">这个class应用在[容器]上，当分辨率低于992px的时候，使[容器]变为竖向排列</p>
 						</div>
 						<div class="demo flex-column flex-md">
 							<div class="flex-item">flex-item</div>
@@ -251,8 +250,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-sm 当分辨率低于768px的时候，使[容器]变为竖向排列</span>
-							<small class="tip">这个class应用在[容器]上</small>
+							<span class="title">flex-sm</span>
+							<p class="tip">这个class应用在[容器]上，当分辨率低于768px的时候，使[容器]变为竖向排列</p>
 						</div>
 						<div class="demo flex-column flex-sm">
 							<div class="flex-item">flex-item</div>
@@ -263,8 +262,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-md-hide 当分辨率低于992px的时候，隐藏[栅格]或[容器]</span>
-							<small class="tip">这个class应用在[容器]或[栅格]上</small>
+							<span class="title">flex-md-hide</span>
+							<p class="tip">这个class应用在[容器]或[栅格]上，当分辨率低于992px的时候，隐藏[栅格]或[容器]</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item">flex-item</div>
@@ -279,8 +278,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-sm-hide 当分辨率低于768px的时候，隐藏[栅格]或[容器]</span>
-							<small class="tip">这个class应用在[容器]或[栅格]上</small>
+							<span class="title">flex-sm-hide</span>
+							<p class="tip">这个class应用在[容器]或[栅格]上，当分辨率低于768px的时候，隐藏[栅格]或[容器]</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item">flex-item</div>
@@ -295,8 +294,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-md-show 当分辨率低于992px的时候，显示[栅格]或[容器]</span>
-							<small class="tip">这个class应用在[容器]或[栅格]上</small>
+							<span class="title">flex-md-show</span>
+							<p class="tip">这个class应用在[容器]或[栅格]上，当分辨率低于992px的时候，显示[栅格]或[容器]</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item-24">把浏览器窗口调小试试</div>
@@ -307,8 +306,8 @@
 					</div>
 					<div class="box">
 						<div class="head">
-							<span class="title">flex-sm-show 当分辨率低于7682px的时候，显示[栅格]或[容器]</span>
-							<small class="tip">这个class应用在[容器]或[栅格]上</small>
+							<span class="title">flex-sm-show</span>
+							<p class="tip">这个class应用在[容器]或[栅格]上，当分辨率低于7682px的时候，显示[栅格]或[容器]</p>
 						</div>
 						<div class="demo flex-column">
 							<div class="flex-item-24">把浏览器窗口调小试试</div>
@@ -322,7 +321,8 @@
 					<h2>实例</h2>
 					<div class="box">
 						<div class="head">
-							<span class="title">响应式圣杯布局，main优先显示，宽度低于992px时候main和side-right变为水平排列, side-left隐藏</span>
+							<span class="title">响应式圣杯布局</span>
+							<p class="tip">main优先显示，宽度低于992px时候main和side-right变为水平排列, side-left隐藏</p>
 						</div>
 						<div class="demo flex-row">
 							<div class="flex-item">header</div>

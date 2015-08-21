@@ -116,6 +116,29 @@
 	.build-align(row);
 }
 
+[class*=flex-item] {
+	&.flex-left {
+		margin-right: auto;
+	}
+	&.flex-right {
+		margin-left: auto;
+	}
+	&.flex-top {
+		margin-bottom: auto;
+	}
+	&.flex-bottom {
+		margin-top: auto;
+	}
+	&.flex-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.flex-middle {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+}
+
 .flex-sm-show, .flex-md-show {
 	display: none;
 }

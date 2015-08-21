@@ -454,6 +454,26 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+[class*=flex-item].flex-left {
+  margin-right: auto;
+}
+[class*=flex-item].flex-right {
+  margin-left: auto;
+}
+[class*=flex-item].flex-top {
+  margin-bottom: auto;
+}
+[class*=flex-item].flex-bottom {
+  margin-top: auto;
+}
+[class*=flex-item].flex-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+[class*=flex-item].flex-middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .flex-sm-show,
 .flex-md-show {
   display: none;
